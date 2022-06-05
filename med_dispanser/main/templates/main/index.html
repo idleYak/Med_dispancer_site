@@ -20,16 +20,29 @@
 <body style="background: linear-gradient(45deg, #44944A 25%, transparent 25%, transparent 75%, #44944A 75%), linear-gradient(45deg, #44944A 25%, transparent 25%, transparent 75%, #44944A 75%) 0.1875em 0.1875em, radial-gradient(at 50% 0, #47A76A, #1E5945);
 background-size: 0.375em 0.375em, 0.375em 0.375em, 100% 100%;">
 
-    <div>
+<div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+  <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
 
+
+  </a>
+
+  <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto" align="right">
+    <a class="me-3 py-2 text-white text-decoration-none" href="#" >Главная</a>
+    <a class="me-3 py-2 text-white text-decoration-none" href="#" >Контакты</a>
+  </nav>
+    <a class="btn btn-outline-primary" href="{% url 'test' %}" style="color:white" >Войти</a>
+    <a class="btn btn-outline-primary" href="#" style="color:white" h>Зарегистрироваться</a>
+</div>
+
+    <div>
     </div>
 
        <div class="container-fluid">
            <div class="row">
                <div class="col-8 ">
-                    <div class="text" style="text-align: center;">
-        			    <h1 style="color:white; font-family: 'Montserrat', sans-serif; font-weight: 700; text-transform: uppercase;margin:20px;">{% trans 'Электронная очередь' %}:</span></h1>
-        			    <h1 style="color:#B57FDC; font-family: 'Montserrat', sans-serif; font-weight: 700; text-transform: uppercase;margin:20px;">{% trans 'Выберите ' %}</span>{% trans 'из представленных услуг' %}</h1>
+                    <div class="text" style="text-align: right;">
+        			    <h1 style="color:white; font-family: 'Montserrat', sans-serif; font-weight: 700; text-transform: uppercase; margin:20px; align:center ">{% trans 'Электронная очередь' %}:</span></h1>
+        			    <h1 style="color:#FFFF00; font-family: 'Montserrat', sans-serif; font-weight: 700; text-transform: uppercase;margin:20px;">{% trans 'Выберите ' %}</span>{% trans 'из представленных услуг' %}</h1>
                     </div>
                </div>
 
@@ -56,6 +69,44 @@ background-size: 0.375em 0.375em, 0.375em 0.375em, 100% 100%;">
                 </div>
             </div>
 
- //= blocks/main/footer.html    <!-- gulp конструкция-->
+<footer class="container pt-4 my-md-5 pt-md-5 border-top" class="footer">
+    <div class="row">
+      <div class="col-12 col-md">
+        <img class="mb-2" src="/img/amigo.jpg" alt="" width="50" height="40">
+        <small class="d-block mb-3 text-muted">Волгоград © 2022</small>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Features</h5>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Stuff for developers</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another one</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Resources</h5>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another resource</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Final resource</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>About</h5>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
 </body>
 </html>
