@@ -60,5 +60,12 @@ def talon(request):
 def helper(request):
     return render(request, 'main/helper.html')
 
-def printer(request):
-    return render(request, 'main/index.html')
+
+#def printer(request):
+ #   return render(request, 'main/index.html')
+
+def login(request):
+    return render(request, 'account/login.html')
+
+def register(request):
+    return render(request, 'account/register.html')

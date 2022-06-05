@@ -9,8 +9,11 @@ const header = require('gulp-header');
 const footer = require('gulp-footer');
 
 function html(){
-    src('blocks/**.html')
+    return src('blocks/**.html')
       .pipe(include({
         prefix: '@@'
       }))
+      .pipe(dest('dist'))
 }
+
+exports.html = html
